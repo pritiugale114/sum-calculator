@@ -58,5 +58,28 @@
         </div>
 
     </div>
+    <script>
+        function calcusum(){
+            const num1element = document.getElementById("num1");
+            const num2element = document.getElementById("num2");
+
+            console.log(num1element.value)
+            console.log(num1element.value)
+
+            const sum = parseInt(num1element.value) + parseInt(num2element.value)
+            const resultelement = document.getElementById("text-result")
+            resultelement.innerText = `sum: ${sum}`
+        }
+         
+        function reset(){
+            const num1element= document.getElementById("num1")
+            num1element.value = ""
+             const num2element= document.getElementById("num2")
+            num2element.value = ""
+            const resultelement= document.getElementById("text-result")
+            resultelement.innerHTML = ""
+            
+        }
+    </script>
 </body>
 </html>
